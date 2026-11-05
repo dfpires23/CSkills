@@ -62,7 +62,7 @@ int main(void) {
 	scanf("%d", &op2);
 	
 	res = sum(op1, op2);
-	printf("sum = %d:0x%x\n", res, res);
+	printf("res = %d:0x%x\n", res, res);
 	
 	return 0;
 }
@@ -70,7 +70,7 @@ int main(void) {
 EOF
 
 cat > "$destino/asm.s" << 'EOF'
-	.section .text
+.section .text
 	.global sum
 
 sum:

@@ -30,14 +30,9 @@ EOF
 
 cat > "$destino/main.c" << 'EOF'
 #include <stdio.h>
-#include "sum.h"
 
 int main(void) {
-	int a, b;
-	scanf("%d", &a);
-	scanf("%d", &b);
-	
-	printf("%d\n", sum(a, b));
+	printf("Hello, World!\n");
 	return 0;
 }
 EOF

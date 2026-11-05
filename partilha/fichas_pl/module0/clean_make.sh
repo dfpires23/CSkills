@@ -1,7 +1,7 @@
 #!/bin/bash
 
 inicio=1
-fim=18
+fim=20
 
 for ((i=inicio; i<=fim; i++))
 do
