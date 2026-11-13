@@ -8,20 +8,16 @@ LOG_FILE="$BASE_DIR/resultados.log"
 for i in $(seq -w 1 22); do
     dir="ex${i}"
 
-    if [ ! -d "$dir" ]; then
+    if [ ! -d "$BASE_DIR/$dir" ]; then
         echo "$dir: PASTA NAO ENCONTRADA" | tee -a "$LOG_FILE"
         continue
     fi
 
-    cd "$BASE_DIR/$dir" || continue
-
-    if make run > /dev/null 2>&1; then
+    if (cd "$BASE_DIR/$dir" && make > /dev/null 2>&1); then
         echo "$dir: SUCESSO" | tee -a "$LOG_FILE"
     else
         echo "$dir: INSUCESSO" | tee -a "$LOG_FILE"
     fi
-
-    cd "$BASE_DIR"
 done
 
 echo ""
