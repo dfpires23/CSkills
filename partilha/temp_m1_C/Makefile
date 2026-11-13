@@ -1,5 +1,3 @@
-# 1230414: Daniel Ferreira Pires: 2NC: Version I
-
 CC=riscv32-linux-gcc
 CFLAGS=-Wall -Wextra -fanalyzer -g
 ARCHFLAGS=-march=rv32imd -mabi=ilp32d

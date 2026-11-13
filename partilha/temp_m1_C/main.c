@@ -1,6 +1,3 @@
-/*
-    1230414: Daniel Ferreira Pires: 2NC: Version I
-*/
 #include "func2.h"
 #include <stdio.h>
 

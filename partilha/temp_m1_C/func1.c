@@ -1,7 +1,3 @@
-/*
-    1230414: Daniel Ferreira Pires: 2NC: Version I
-*/
-
 int func1(long long *robot) {
     unsigned char *ptr = (unsigned char *)robot;
 

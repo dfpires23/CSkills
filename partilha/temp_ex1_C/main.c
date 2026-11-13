@@ -1,7 +1,3 @@
-/*
-    1230414: Daniel Ferreira Pires: 2NC: Version A
-*/
-
 #include "func2.h"
 #include <stdio.h>
 #define NCARS 5

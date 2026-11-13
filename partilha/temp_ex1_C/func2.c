@@ -1,6 +1,3 @@
-/*
-    1230414: Daniel Ferreira Pires: 2NC: Version A
-*/
 #include "func1.h"
 
 int check_tires(unsigned int *cars, int n, unsigned int **fill) {
